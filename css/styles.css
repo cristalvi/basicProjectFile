@@ -12,6 +12,9 @@ html {
 
    }
 
+   .nav-container nav {
+
+   }
    .nav-container .wrapper {
 
    }
@@ -22,10 +25,30 @@ html {
 
    }
 
+   .footer-container footer {
+       color: black;
+       padding: 20px 0;
+       text-align: center;
+   }
    .footer-container .wrapper {
 
    }
 
    .footer-container .wrapper .credit {
        margin: 3px 0;
+   }
+
+   .footer-container footer a {
+       text-decoration: none;
+       color: rgba(0, 150, 207, 1);
+       font-weight: 600;
+   }
+   .footer-container footer a:hover {
+       color: #333333;
+   }
+
+   .credit {
+       color: #333333;
+       text-align: center;
+       margin: 40px 0 34px 0;
    }
