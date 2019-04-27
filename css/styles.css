@@ -31,15 +31,18 @@ html {
 
    }
 
-   .nav-container nav a {
-       text-decoration: none;
-       color: rgba(0, 150, 207, 1);
-       font-weight: 600;
-   }
+
+
+    
    .nav-container nav li {
        display: inline-block;
        margin: 20px;
        font: 16px/26px Muli, Squada;
+   }
+   .nav-container nav a {
+       text-decoration: none;
+       color: rgba(0, 150, 207, 1);
+       font-weight: 600;
    }
 
 
@@ -92,9 +95,24 @@ html {
 
 @media only screen and (min-width: 480px) {
 
+    nav li {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    nav a {
+
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
+
+    nav li {
+
+    }
 
 }
 
