@@ -4,9 +4,11 @@ html {
     line-height: ;
 }
 
+
+
 /* ===========================================
-   Author's custom styles
-   ============================================ */
+      Author's custom styles
+    =========================================== */
 
    .nav-container {
 
@@ -52,3 +54,31 @@ html {
        text-align: center;
        margin: 40px 0 34px 0;
    }
+
+
+
+/* ===========================================
+      Media styles
+    =========================================== */
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+}
+
+
+
+/* ===========================================
+      Print styles
+    =========================================== */
+
+@media print {
+
+}
