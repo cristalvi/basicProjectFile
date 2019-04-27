@@ -10,21 +10,49 @@ html {
       Author's custom styles
     =========================================== */
 
-   .nav-container {
+    body {
 
+    }
+
+    .logo a img {
+        width: 300px;
+        margin: 10px 0 0 120px;
+        float: left;
+    }
+
+   .nav-container {
+        margin-right: 120px;
    }
 
    .nav-container nav {
-
+        float: right;
    }
    .nav-container .wrapper {
 
    }
 
+   .nav-container nav a {
+       text-decoration: none;
+       color: rgba(0, 150, 207, 1);
+       font-weight: 600;
+   }
+   .nav-container nav li {
+       display: inline-block;
+       margin: 20px;
+       font: 16px/26px Muli, Squada;
+   }
+
+
+
+   .main {
+       clear: left;
+       padding: 60px 160px 40px;
+   }
+
 
 
    .footer-container {
-
+        clear: right;
    }
 
    .footer-container footer {
@@ -53,6 +81,7 @@ html {
        color: #333333;
        text-align: center;
        margin: 40px 0 34px 0;
+       font: lighter 16px/26px Muli, Squada;
    }
 
 
