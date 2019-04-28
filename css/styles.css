@@ -33,7 +33,7 @@ html {
 
 
 
-    
+
    .nav-container nav li {
        display: inline-block;
        margin: 20px;
@@ -95,24 +95,9 @@ html {
 
 @media only screen and (min-width: 480px) {
 
-    nav li {
-        display: block;
-        width: 100%;
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    nav a {
-
-    }
-
 }
 
 @media only screen and (min-width: 768px) {
-
-    nav li {
-
-    }
 
 }
 
