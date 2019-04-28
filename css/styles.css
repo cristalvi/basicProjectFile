@@ -1,8 +1,11 @@
-html {
-    color: ;
-    font-size: ;
-    line-height: ;
-}
+/* =================================================================
+      written April 2019 by Cristal Fernett
+    ================================================================= */
+    html {
+        color: ;
+        font-size: ;
+        line-height: ;
+    }
 
 
 
@@ -47,6 +50,9 @@ html {
 
 
 
+    .main-container {
+        clear: both;
+    }
    .main {
        clear: left;
        padding: 60px 160px 40px;
@@ -93,17 +99,17 @@ html {
       Media styles
     =========================================== */
 
-@media only screen and (min-width: 480px) {
+    @media only screen and (min-width: 480px) {
 
-}
+    }
 
-@media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
 
-}
+    }
 
-@media only screen and (min-width: 1140px) {
+    @media only screen and (min-width: 1140px) {
 
-}
+    }
 
 
 
@@ -111,6 +117,6 @@ html {
       Print styles
     =========================================== */
 
-@media print {
+    @media print {
 
-}
+    }
