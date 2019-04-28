@@ -8,9 +8,7 @@
         <link rel="stylesheet" href="css/styles.css">
 
         <!-- Google Web Fonts  -->
-
         <link href="https://fonts.googleapis.com/css?family=Squada|Muli:300,400,700,800,900" rel="stylesheet">
-
 
     </head>
     <body>
@@ -22,12 +20,15 @@
         <!-- <?php include('includes/nav.php'); ?> -->
         <div class="nav-container">
             <nav class="wrapper">
-                <ul>
-                    <li class="page<!--<?php if ($page == 'index.php') { print '-on'; } ?>-->"><a href="index.html">Gallery</a></li>
+                <ul class="active">
+                    <div class="current-item">
+                        <li class="page<!--<?php if ($page == 'index.php') { print '-on'; } ?>-->"><a href="index.html">Gallery</a></li>
+                    </div>
                     <li class="page<!--<?php if ($page == 'about.php') { print '-on'; } ?>-->"><a href="about.html">About</a></li>
                     <li class="page<!--<?php if ($page == 'shop.php') { print '-on'; } ?>-->"><a href="shop.html">Shop</a></li>
                     <li class="page<!--<?php if ($page == 'contact.php') { print '-on'; } ?>-->"><a href="contact.html">Contact</a></li>
                 </ul>
+                <a class="toggle-nav" href="index.html">&#9776;</a>
             </nav>
         </div>
         <!--  END of NAV -->
@@ -55,6 +56,10 @@
             </footer>
         </div>
         <!-- END of FOOTER -->
+
+        <!-- Google jQuery CDN  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
 
     </body>
 </html>

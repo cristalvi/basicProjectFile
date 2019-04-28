@@ -23,6 +23,14 @@
         float: left;
     }
 
+
+
+/* --------------- Navigaton --------------- */
+
+    .toggle-nav {            /* Toggle Button */
+    	display:none;
+    }
+
    .nav-container {
         margin-right: 120px;
    }
@@ -33,20 +41,33 @@
    .nav-container .wrapper {
 
    }
-
-
-
-
+   .nav-container .wrapper ul {
+       display: inline-block;
+   }
    .nav-container nav li {
        display: inline-block;
        margin: 20px;
        font: 16px/26px Muli, Squada;
+ /* for mobile nav */
+	   list-style:none;
    }
+/* for mobile nav */
+    .nav-container nav li:last-child {
+        margin-right: 0;
+    }
+
    .nav-container nav a {
        text-decoration: none;
        color: rgba(0, 150, 207, 1);
        font-weight: 600;
+/* for mobile nav */
+        transition:color linear 0.15s;
    }
+/* for mobile nav */
+   .menu a:hover, .menu .current-item a {
+	    text-decoration:none;
+	    color:#66a992;
+    }
 
 
 
@@ -98,6 +119,87 @@
 /* ===========================================
       Media styles
     =========================================== */
+
+/* for mobile nav */
+    @media screen and (min-width: 860px) {
+        nav .wrapper {
+            width:100%;
+	        padding:10px 18px;
+	        /* box-shadow:0px 1px 1px rgba(0,0,0,0.15); */
+	        border-radius:3px;
+	        /* background:#303030; */
+        }
+    }
+
+    /*----- Responsive -----*/
+    @media screen and (max-width: 1150px) {
+    	.wrap {
+    		width:90%;
+    	}
+    }
+
+    @media screen and (max-width: 860px) {
+    	nav .wrapper {
+    		position:relative;
+    		display:inline-block;
+    	}
+
+    	nav .wrapper ul.active {
+    		display:none;
+    	}
+
+    	nav .wrapper ul {
+    		width:100%;
+    		position:absolute;
+    		top:120%;
+    		left:0px;
+	    	padding:10px 18px;
+		    box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+    		border-radius:3px;
+    		background:#303030;
+    	}
+
+    	nav .wrapper ul:after {
+    		width:0px;
+    		height:0px;
+    		position:absolute;
+    		top:0%;
+    		left:22px;
+    		content:'';
+    		transform:translate(0%, -100%);
+    		border-left:7px solid transparent;
+    		border-right:7px solid transparent;
+    		border-bottom:7px solid #303030;
+    	}
+
+    	nav .wrapper li {
+    		margin:5px 0px 5px 0px;
+    		float:none;
+    		display:block;
+    	}
+
+    	nav .wrapper a {
+    		display:block;
+    	}
+
+    	.toggle-nav {
+    		padding:9px;
+    		float:left;
+    		display:inline-block;
+    		box-shadow:2px 2px 4px rgba(0,0,0,0.15);
+    		border-radius:3px;
+    		background:#white;
+    		text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+    		color:#777;
+    		font-size:20px;
+    		transition:color linear 0.15s;
+    	}
+
+    	.toggle-nav:hover, .toggle-nav.active {
+    		text-decoration:none;
+    		color:#66a992;
+    	}
+    }
 
     @media only screen and (min-width: 480px) {
 
